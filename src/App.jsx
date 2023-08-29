@@ -8,7 +8,7 @@ function App() {
     <div>
 
       <BrowserRouter>
-
+        <p>Hola</p>
         <Routes>
 
           <Route path='*' element= {<Navigate to='/'/>} />
