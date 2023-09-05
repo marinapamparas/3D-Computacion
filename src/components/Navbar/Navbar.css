@@ -1,0 +1,11 @@
+.logoimg{
+    padding: 10%;
+    width: 35%;
+}
+
+.navbarcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 133px;
+}
