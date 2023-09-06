@@ -4,6 +4,7 @@ import NavBar from "./components/Navbar/Navbar";
 import Servicios from "./components/Servicios/Servicios";
 import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
+import Productos from "./components/Productos/Productos";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <QuienesSomos/>
         <Servicios />
+        <Productos/>
         <WhatsAppButton />        
       </BrowserRouter>
     </div>
