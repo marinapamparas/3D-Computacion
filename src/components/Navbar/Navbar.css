@@ -1,11 +1,29 @@
 .logoimg{
-    padding: 10%;
-    width: 35%;
+    padding-left: 35%;
+    padding-right: 2%;
+    width: 80%;
 }
 
+.logocontainer{
+    width: 50%;
+}
 .navbarcontainer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 133px;
+    align-items: center;
+    height: 100px;
+    padding-right: 5%;
+
+}
+
+.navbarlinks{
+    display: flex;    
+}
+
+.nav-border-bottom{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.242);
+}
+
+a {
+color: #313E47 !important;
+font
 }
