@@ -1,0 +1,28 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    z-index: 1000; 
+    width: 70px;
+    text-align: center;
+    
+    
+}
+
+
+
+.whatsapp-button button {
+    background-color: #57CC65;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0 !important;
+   
+    
+}
+
+.logowp{
+    font-size: 40px;
+   
+}

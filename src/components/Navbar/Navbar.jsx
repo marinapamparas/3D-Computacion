@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavLink from 'react-bootstrap/esm/NavLink';
+import {HashLink as Link} from 'react-router-hash-link' ;
 import logo from '../../assets/logo.png';
 import './Navbar.css'
 
@@ -17,10 +17,10 @@ const NavBar = () => {
         
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navbarlinks">
-              <NavLink to={`/QuienesSomos`} className={({isActive}) => isActive ? 'NavActiva' : 'NavPasiva'}>Quiénes somos</NavLink>
-              <NavLink to={`/Servicios`} className={({isActive}) => isActive ? 'NavActiva' : 'NavPasiva'}>Servicios</NavLink>
-              <NavLink to={`/Productos`} className={({isActive}) => isActive ? 'NavActiva' : 'NavPasiva'}>Productos</NavLink>
-              <NavLink to={`/Contactanos`} className={({isActive}) => isActive ? 'NavActiva' : 'NavPasiva'}>Contactanos</NavLink>
+              <Link to={`#QuienesSomos`}>Quiénes somos</Link>
+              <Link to={`#Servicios`}>Servicios</Link>
+              <Link to={`#Productos`}>Productos</Link>
+              <Link to={`#Contactanos`}>Contactanos</Link>
                             
             </Nav>
         </Navbar.Collapse>

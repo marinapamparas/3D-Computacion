@@ -4,7 +4,7 @@ import "./QuienesSomos.css"
 
 const QuienesSomos = () => {
     return (
-        <div className='containerQuienesSomos'>
+        <div className='containerQuienesSomos' id='QuienesSomos'>
             <div className='containerp'>
                 <h2 className='fonth2'>¿Quiénes somos?</h2>
                 <p className='fontp'> Durante 20 años nos hemos dedicado apasionadamente al servicio de reparación y mantenimiento de computadoras en Las Heras, Mendoza. Nuestro éxito se basa en la cercanía que mantenemos con cada cliente. La confianza que depositan en nosotros es la base de nuestro compromiso diario para brindar soluciones tecnológicas que perduren en el tiempo. </p>

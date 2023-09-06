@@ -12,11 +12,32 @@
     align-items: center;
     height: 100px;
     padding-right: 5%;
+    margin-bottom: 7px;
 
 }
 
 .navbarlinks{
     display: flex;    
+}
+
+.NavActiva{
+    color: #313E47;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.264px;
+}
+
+.NavPasiva{
+    color: #7BCAD1;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.264px;
 }
 
 .nav-border-bottom{
