@@ -5,6 +5,7 @@ import Servicios from "./components/Servicios/Servicios";
 import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 import Productos from "./components/Productos/Productos";
+import Contacto from "./components/Contacto/Contacto";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <QuienesSomos/>
         <Servicios />
         <Productos/>
+        <Contacto/>
         <WhatsAppButton />        
       </BrowserRouter>
     </div>
