@@ -6,6 +6,7 @@ import logo from '../../assets/logo.png';
 import './Navbar.css'
 
 const NavBar = () => {
+
   return (
     <Navbar expand="lg" className='navbar nav-border-bottom'>
         
@@ -13,7 +14,8 @@ const NavBar = () => {
         <div className='logocontainer'>
           <Navbar.Brand href="#home"><img src={logo} alt="logo 3D-computacion" className='logoimg' /></Navbar.Brand>
         </div>   
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+        
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav"/> */}
         
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navbarlinks">

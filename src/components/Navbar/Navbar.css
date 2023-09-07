@@ -2,6 +2,7 @@
     padding-left: 35%;
     padding-right: 2%;
     width: 80%;
+
 }
 
 .logocontainer{
@@ -20,26 +21,6 @@
     display: flex;    
 }
 
-.NavActiva{
-    color: #313E47;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; 
-    letter-spacing: -0.264px;
-}
-
-.NavPasiva{
-    color: #7BCAD1;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; 
-    letter-spacing: -0.264px;
-}
-
 .nav-border-bottom{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.242);
 }
@@ -48,3 +29,4 @@ a {
 color: #313E47 !important;
 font
 }
+
