@@ -13,19 +13,19 @@ const Productos = () => {
         <div className="info-productos">
             <p><span>Productos </span> Conseguilos en nuestra tienda o por Marketplace. Consultanos; tenemos variedad de opciones.</p>
         </div>
-          <div className="auris">
+          <div className="auris" data-label="Auriculares">
             <img src={imgAuriculares} className="imagenHover"/>
           </div>
-          <div className="cargador">
+          <div className="cargador" data-label="Cargadores">
           <img src={imgCargador} className="imagenHover"/>
           </div>
-          <div className="fundas">
+          <div className="fundas" data-label="Fundas y protectores para celular">
             <img src={imgFundas} className="imagenHover"/>
           </div>
-          <div className="cables">
+          <div className="cables" data-label="Cables USB y auxiliares">
             <img src={imgCables} className="imagenHover"/>
           </div>
-          <div className="mouse">
+          <div className="mouse" data-label="Mouses y teclados">
             <img src={imgMouse} className="imagenHover"/>
           </div>
       </div>

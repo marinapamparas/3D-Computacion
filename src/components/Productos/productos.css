@@ -45,7 +45,7 @@
 }
 
 .auris img {
-    width: 303px;
+    width: 100%;
     height: 100%;
 }
 
@@ -54,12 +54,13 @@
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    position: relative;
 
 }
 
 .cargador img {
-    width: 286px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     border-radius: 18px;
 }
 
@@ -68,12 +69,13 @@
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    position: relative;
 
 }
 
 .fundas img {
-    width: 543px;
-    height: 386px;
+    width: 100%;
+    height: 100%;
 }
 
 .cables {
@@ -81,12 +83,13 @@
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    position: relative;
 
 }
 
 .cables img {
-    width: 616px;
-    height: 362px;
+    width: 100%;
+    height: 100%;
 }
 
 .mouse {
@@ -94,12 +97,13 @@
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    position: relative;
 
 }
 
 .mouse img {
-    width: 528px;
-    height: 346px;
+    width: 100%;
+    height: 100%;
 }
 
 .imagenHover {
@@ -109,10 +113,145 @@
 .auris:hover::before {
     content: "";
     position: absolute;
-    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     pointer-events: none;
+    border-radius: inherit;
+}
+
+.auris::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.auris:hover::after {
+    opacity: 1;
+}
+
+.cargador:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.cargador::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cargador:hover::after {
+    opacity: 1;
+}
+
+.fundas:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.fundas::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.fundas:hover::after {
+    opacity: 1;
+}
+
+.cables:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.cables::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cables:hover::after {
+    opacity: 1;
+}
+
+.mouse:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.mouse::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.mouse:hover::after {
+    opacity: 1;
 }
