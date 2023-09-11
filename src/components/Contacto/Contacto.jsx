@@ -14,7 +14,7 @@ const Contacto = () => {
           <h3>Contactanos</h3>
         </div>
         <div className="google-maps">
-          <img src={imgContacto} />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.7821468929037!2d-68.84250792353019!3d-32.851019367066634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0897255425fb%3A0xa230da7138a383d0!2sDr.%20Moreno%201495%2C%20M5539%20Las%20Heras%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1694462925339!5m2!1ses-419!2sar" width="100" height="450" style={{border: "0"}} loading="lazy" ></iframe>
         </div>
         <div className="datos-contacto">
           <div className="telefono">

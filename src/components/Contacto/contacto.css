@@ -29,57 +29,69 @@
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    width: 85%;
+    border-radius: 20px;
+}
+.google-maps iframe{
+    border-radius: 20px;
 }
 
-.google-maps img {
-    width: 80%;
-}
 
 .datos-contacto {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 75%;
+    width: 72%;
     height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
     color: #DCE2E5; 
-    gap: 2%;
+    gap: 0%;
 }
 .telefono{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.telefono p{
+    margin-bottom: 8%;
 }
 .direccion{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-direccion{
+    margin-left: 6%;
 }
 .horarios{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 5%;
 }
+.horarios p{
 
+}
 .container-icono-tel {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    width: 150%;
+    width: 120%;
 }
 
 .container-icono-ubi {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 150%;
 }
 
@@ -87,7 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-left: 15%;
+    /* margin-left: 22%; */
     font-size: 15px; 
 }
 
@@ -105,11 +117,11 @@
     align-items: center;
     justify-content: left;
     text-align: start;
-    margin-left: 6%;
+    margin-left: 12%;
 }
 
 .container-icono-tel img {
-    width: 20%;
+    width: 30%;
 }
 
 .container-icono-ubi img {
