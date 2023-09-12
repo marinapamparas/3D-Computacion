@@ -3,10 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {HashLink as Link} from 'react-router-hash-link' ;
 import logo from '../../assets/logo.png';
-import './Navbar.css'
+import './Navbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
-
+  
   return (
     <Navbar expand="lg" className='navbar nav-border-bottom'>
         
@@ -15,7 +16,7 @@ const NavBar = () => {
           <Navbar.Brand href="#home"><img src={logo} alt="logo 3D-computacion" className='logoimg' /></Navbar.Brand>
         </div>   
         
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav"/> */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggle-container'/>
         
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navbarlinks">
@@ -28,6 +29,7 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
   );
 }
 

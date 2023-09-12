@@ -3,6 +3,9 @@ import "./QuienesSomos.css"
 
 
 const QuienesSomos = () => {
+
+    
+
     return (
         <div className='containerQuienesSomos' id='QuienesSomos'>
             <div className='containerp'>

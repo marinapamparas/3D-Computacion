@@ -8,7 +8,7 @@ import imgMouse from "../../multimedia/mouse.png";
 
 const Productos = () => {
   return (
-    <div>
+    <div id='Productos'>
       <div className="container-productos">
         <div className="info-productos">
             <p><span>Productos </span> Conseguilos en nuestra tienda o por Marketplace. Consultanos; tenemos variedad de opciones.</p>
