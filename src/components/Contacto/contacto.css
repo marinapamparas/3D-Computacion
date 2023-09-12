@@ -1,0 +1,133 @@
+.container-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: url('../../multimedia/fondoServicios.png');
+    background-color: #01395E;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-contacto {
+    text-align: center;
+    margin-top: 5%;
+    color: #DCE2E5;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+}
+.line-side{
+    height: 150px;
+}
+.google-maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 85%;
+    border-radius: 20px;
+}
+.google-maps iframe{
+    border-radius: 20px;
+}
+
+
+.datos-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 72%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #DCE2E5; 
+    gap: 0%;
+}
+.telefono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.telefono p{
+    margin-bottom: 8%;
+}
+.direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-direccion{
+    margin-left: 6%;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+.horarios p{
+
+}
+.container-icono-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+}
+
+.container-icono-ubi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 150%;
+}
+
+.container-icono-ubi p{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* margin-left: 22%; */
+    font-size: 15px; 
+}
+
+.container-icono-horario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: 180%;
+
+}
+.info-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: start;
+    margin-left: 12%;
+}
+
+.container-icono-tel img {
+    width: 30%;
+}
+
+.container-icono-ubi img {
+    width: 20%;
+}
+
+.container-icono-horario img {
+    width: 20%;
+}
