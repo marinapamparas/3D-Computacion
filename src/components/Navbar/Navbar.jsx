@@ -20,10 +20,10 @@ const NavBar = () => {
         
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navbarlinks">
-              <Link to={`#QuienesSomos`}>Quiénes somos</Link>
-              <Link to={`#Servicios`}>Servicios</Link>
-              <Link to={`#Productos`}>Productos</Link>
-              <Link to={`#Contactanos`}>Contactanos</Link>
+              <Link className="titulosnavbar" to={`#QuienesSomos`}>Quiénes somos</Link>
+              <Link className="titulosnavbar" to={`#Servicios`}>Servicios</Link>
+              <Link className="titulosnavbar" to={`#Productos`}>Productos</Link>
+              <Link  className="titulosnavbar" to={`#Contactanos`}>Contactanos</Link>
                             
             </Nav>
         </Navbar.Collapse>

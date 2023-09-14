@@ -18,7 +18,12 @@
 }
 
 .navbarlinks{
-    display: flex;    
+    display: flex;   
+ 
+}
+.titulosnavbar{
+    color: #313E47; 
+    text-decoration: none;
 }
 
 .nav-border-bottom{
@@ -31,7 +36,4 @@
 }
 
 
-a {
-color: #313E47 !important;
-}
 
