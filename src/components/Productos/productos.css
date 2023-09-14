@@ -255,3 +255,286 @@
 .mouse:hover::after {
     opacity: 1;
 }
+
+.mobile-title {
+    display: none;
+}
+
+@media only screen and (max-width: 580px) {
+
+    .container-productos {
+        display: grid;
+        grid-template-columns: min 1fr 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "info-productos info-productos info-productos info-productos"
+            "auris cargador fundas fundas"
+            "cables cables mouse mouse";
+        padding: 5%;
+    }
+
+    .info-productos {
+        grid-area: info-productos;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-productos span {
+        color: #313E47;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.44px;
+        margin-right: 15px;
+    }
+
+    .info-productos p {
+        color: #313E47;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.264px;
+    }
+
+    .auris {
+        grid-area: auris;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .auris img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cargador {
+        grid-area: cargador;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .cargador img {
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+    }
+
+    .fundas {
+        grid-area: fundas;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .fundas img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cables {
+        grid-area: cables;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .cables img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mouse {
+        grid-area: mouse;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .mouse img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagenHover {
+        border-radius: 18px;
+    }
+
+    .auris:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .auris::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: 24px;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .auris:hover::after {
+        opacity: 1;
+    }
+
+    .cargador:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .cargador::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: 24px;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .cargador:hover::after {
+        opacity: 1;
+    }
+
+    .fundas:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .fundas::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: 24px;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .fundas:hover::after {
+        opacity: 1;
+    }
+
+    .cables:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .cables::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: 24px;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .cables:hover::after {
+        opacity: 1;
+    }
+
+    .mouse:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .mouse::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-size: 24px;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .mouse:hover::after {
+        opacity: 1;
+    }
+
+    .mobile-title {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+    .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
+        font-size: 12px;  /* o el tamaño que desees para móviles */
+    }
+}
