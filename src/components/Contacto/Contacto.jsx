@@ -8,7 +8,7 @@ import line from "../../multimedia/Rectangle.svg";
 
 const Contacto = () => {
   return (
-    <div>
+    <div id='Contacto'>
       <div className="container-contacto">
         <div className="title-contacto">
           <h3>Contactanos</h3>
