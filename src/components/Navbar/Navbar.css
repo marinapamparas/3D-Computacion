@@ -80,6 +80,9 @@
         font-size: 18px;
         padding: 10% 50% 7% 6%;
     }
+    .navbarcontainer{
+        height: 85px;
+    }
 }
 
 
