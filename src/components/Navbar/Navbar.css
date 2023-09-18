@@ -17,10 +17,6 @@
     height: 130px;
 }
 
-.navbarcollapse{
-  
-    
-}
 
 .navbarlinks{
     display: flex;
@@ -80,6 +76,10 @@
     }
     .contactanoslink{
         padding-bottom: 80%;
+    }
+
+    .navbarcollapse{
+        /* width: 50%; */
     }
     
         
