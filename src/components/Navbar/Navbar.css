@@ -5,6 +5,11 @@
     transition: none;
 }
 
+.navbar-fixed {
+    position: fixed !important;
+    background-color: white;
+  }
+
 .logocontainer{
     width: 20%;
 }
@@ -12,11 +17,14 @@
     height: 130px;
 }
 
+.navbarcollapse{
+  
+    
+}
 
 .navbarlinks{
     display: flex;
 
- 
 }
 .titulosnavbar{
     color: #313E47; 
@@ -25,7 +33,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     letter-spacing: -0.264px;  
     padding-left: 8%; 
 }
@@ -41,6 +49,15 @@
 }
 
 
+.buttonnavbar{
+    background-color: white;
+    border: 0px;
+    font-weight: 300;
+    color: #313E47;
+}
+
+
+
 
 @media (max-width: 999px){
     .logocontainer{
@@ -50,22 +67,25 @@
     .navbarcontainer{
         margin: 2% 10% 2%;
         height: 100px;
+        
     }
     .titulosnavbar{
         background-color: white;
         text-align: left;
-        margin-left: 50%;
-        padding: 7% 50% 7% 5%;
+        margin-left: 40%;
+        padding: 7% 0% 7% 5%;
         color: #313E47;
-        font-style: normal;
-        font-weight: 600;
         line-height: normal;
+        border: white solid;
+    }
+    .contactanoslink{
+        padding-bottom: 80%;
     }
     
         
 }
 
-@media (max-width: 500px){
+@media (max-width: 501px){
     .toggle-container{
         width: 20%;
         border: white !important;
@@ -82,6 +102,10 @@
     }
     .navbarcontainer{
         height: 85px;
+    
+    }
+    .contactanoslink{
+        padding-bottom: 80%;
     }
 }
 
