@@ -7,6 +7,7 @@
 
 .navbar-fixed {
     position: fixed !important;
+    z-index: 1000;
     background-color: white;
   }
 
@@ -16,6 +17,7 @@
 .navbarcontainer{
     height: 130px;
 }
+
 
 
 .navbarlinks{
@@ -62,14 +64,13 @@
     }
     .navbarcontainer{
         margin: 2% 10% 2%;
-        height: 100px;
+        height: 100%;
         
     }
     .titulosnavbar{
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         text-align: left;
-        margin-left: 40%;
-        padding: 7% 0% 7% 5%;
+        padding: 15% 0% 15% 7%;
         color: #313E47;
         line-height: normal;
         border: white solid;
@@ -77,9 +78,15 @@
     .contactanoslink{
         padding-bottom: 80%;
     }
-
     .navbarcollapse{
-        /* width: 50%; */
+        position: fixed;        
+        top: 12%;                 
+        bottom: 0;             
+        left: 50%;              
+        width: 50%;             
+        background-color: white;
+        z-index: 1000;          
+        overflow-y: auto; 
     }
     
         
@@ -98,15 +105,9 @@
     }
     .titulosnavbar{
         font-size: 18px;
-        padding: 10% 50% 7% 6%;
+        padding: 15% 10% 12% 6%;
     }
-    .navbarcontainer{
-        height: 85px;
-    
-    }
-    .contactanoslink{
-        padding-bottom: 80%;
+     .navbarcollapse{
+        top: 8%; 
     }
 }
-
-
