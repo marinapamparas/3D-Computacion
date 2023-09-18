@@ -3,7 +3,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 
 const WhatsAppButton = () => {
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/2216422375', '_blank');
+        window.open('https://wa.me/2613341834', '_blank');
     };
   
     return (

@@ -21,7 +21,7 @@ const NavBar = () => {
         
       <Container className='navbarcontainer'>
         <div className='logocontainer'>
-          <Navbar.Brand href="#home"><img src={logo} alt="logo 3D-computacion" className='logoimg' /></Navbar.Brand>
+          <Navbar.Brand href="/"><img src={logo} alt="logo 3D-computacion" className='logoimg' /></Navbar.Brand>
         </div>   
         
 
