@@ -221,6 +221,8 @@
     color: white;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    white-space: nowrap;
+
 }
 
 .cables:hover::after {
@@ -250,6 +252,7 @@
     color: white;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    white-space: nowrap;
 }
 
 .mouse:hover::after {
@@ -258,6 +261,11 @@
 
 .mobile-title {
     display: none;
+}
+@media only screen and (max-width: 750px) {
+    .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -378,7 +386,7 @@
         border-radius: 18px;
     }
 
-    .auris:hover::before {
+    .auris::before {
         content: "";
         position: absolute;
         left: 0;
@@ -396,18 +404,13 @@
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0;
-        font-size: 24px;
+        opacity: 1;
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
     }
 
-    .auris:hover::after {
-        opacity: 1;
-    }
-
-    .cargador:hover::before {
+    .cargador::before {
         content: "";
         position: absolute;
         left: 0;
@@ -425,18 +428,14 @@
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0;
-        font-size: 24px;
+        opacity: 1; 
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
     }
 
-    .cargador:hover::after {
-        opacity: 1;
-    }
 
-    .fundas:hover::before {
+    .fundas::before {
         content: "";
         position: absolute;
         left: 0;
@@ -455,18 +454,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        font-size: 24px;
+        opacity: 1;
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
         white-space: nowrap;
     }
 
-    .fundas:hover::after {
-        opacity: 1;
-    }
-
-    .cables:hover::before {
+    .cables::before {
         content: "";
         position: absolute;
         left: 0;
@@ -485,7 +480,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        font-size: 24px;
+        opacity: 1;
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -493,11 +488,7 @@
 
     }
 
-    .cables:hover::after {
-        opacity: 1;
-    }
-
-    .mouse:hover::before {
+    .mouse::before {
         content: "";
         position: absolute;
         left: 0;
@@ -516,16 +507,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        font-size: 24px;
+        opacity: 1;
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
         white-space: nowrap;
     }
 
-    .mouse:hover::after {
-        opacity: 1;
-    }
 
     .mobile-title {
         display: flex;
@@ -537,7 +525,8 @@
     .desktop-title {
         display: none;
     }
+
     .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
-        font-size: 11px; 
+        font-size: 11px;
     }
 }

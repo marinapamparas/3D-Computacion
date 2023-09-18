@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     background: url('../../multimedia/fondoServicios.png');
-    background-color: #01395E; 
+    background-color: #01395E;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,7 +42,7 @@
     text-align: center;
 }
 
-.container-info p{
+.container-info p {
     color: #F4F6F5;
 }
 
@@ -54,23 +54,23 @@
         flex-direction: column;
         width: 100%;
         background: url('../../multimedia/fondoServicios.png');
-        background-color: #01395E; 
+        background-color: #01395E;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+
     .title-services {
         text-align: center;
         padding: 5%;
     }
-    
+
     .title-services h1 {
         color: var(--casi-blanco, #F4F6F5);
         font-size: 35px;
         font-style: normal;
         font-weight: 600;
     }
-    
+
     .container-info-services {
         display: flex;
         align-items: start;
@@ -79,7 +79,7 @@
         height: 30vh;
         margin-top: 7%;
     }
-    
+
     .container-info {
         display: flex;
         align-items: center;
@@ -89,13 +89,13 @@
         gap: 20px;
         text-align: center;
     }
-    
-    .container-info p{
+
+    .container-info p {
         color: #F4F6F5;
         font-size: 14px;
     }
 
-    .container-info img{
+    .container-info img {
         width: 75px;
         height: 75px;
     }
@@ -109,34 +109,34 @@
         flex-direction: column;
         width: 100%;
         background: url('../../multimedia/fondoServicios.png');
-        background-color: #01395E; 
+        background-color: #01395E;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+
     .title-services {
         text-align: center;
         padding: 5%;
     }
-    
+
     .title-services h1 {
         color: var(--casi-blanco, #F4F6F5);
         font-size: 35px;
         font-style: normal;
         font-weight: 600;
     }
-    
+
     .container-info-services {
         display: flex;
         align-items: start;
         flex-direction: row;
         margin-bottom: 3%;
         height: 30vh;
-        margin-top: 5%;
+        margin-top: 1%;
         gap: 25px;
         padding: 6%;
     }
-    
+
     .container-info {
         display: flex;
         align-items: center;
@@ -146,13 +146,13 @@
         gap: 20px;
         text-align: center;
     }
-    
-    .container-info p{
+
+    .container-info p {
         color: #F4F6F5;
         font-size: 14px;
     }
 
-    .container-info img{
+    .container-info img {
         width: 60px;
         height: 60px;
     }
@@ -166,34 +166,34 @@
         flex-direction: column;
         width: 100%;
         background: url('../../multimedia/fondoServicios.png');
-        background-color: #01395E; 
+        background-color: #01395E;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+
     .title-services {
         text-align: center;
         padding: 5%;
     }
-    
+
     .title-services h1 {
         color: var(--casi-blanco, #F4F6F5);
         font-size: 25px;
         font-style: normal;
         font-weight: 400;
     }
-    
+
     .container-info-services {
         display: flex;
         align-items: start;
         flex-direction: row;
         margin-bottom: 3%;
         height: 30vh;
-        margin-top: 5%;
+        margin-top: 1%;
         gap: 20px;
         padding: 6%;
     }
-    
+
     .container-info {
         display: flex;
         align-items: center;
@@ -203,14 +203,14 @@
         gap: 20px;
         text-align: center;
     }
-    
-    .container-info p{
+
+    .container-info p {
         color: #F4F6F5;
         font-size: 13px;
     }
 
-    .container-info img{
-        width: 55px;
-        height: 55px;
+    .container-info img {
+        width: 50px;
+        height: 50px;
     }
 }
