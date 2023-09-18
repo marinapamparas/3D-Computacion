@@ -34,18 +34,22 @@ const NavBar = () => {
           
         </Navbar.Toggle>
         
-      </Container>
-        <div className='navbarcollapse'>
-          <Navbar.Collapse id="basic-navbar-nav" >
+        
+        <Navbar.Collapse id="basic-navbar-nav" >
+            <div className='navbarcollapse'>
               <Nav className="me-auto navbarlinks">
                 <Link className="titulosnavbar" to={`#QuienesSomos`}>Quiénes somos</Link>
                 <Link className="titulosnavbar" to={`#Servicios`}>Servicios</Link>
                 <Link className="titulosnavbar" to={`#Productos`}>Productos</Link>
-                <Link  className="titulosnavbar contactanoslink" to={`#Contacto`}>Contactanos</Link>
+                <Link  className="titulosnavbar" to={`#Contacto`}>Contactanos</Link>
                               
               </Nav>
-          </Navbar.Collapse>
-        </div>
+            </div>
+        </Navbar.Collapse>
+        
+      </Container>
+        
+        
     </Navbar>
 
   );
