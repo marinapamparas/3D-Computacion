@@ -24,7 +24,7 @@ const Productos = () => {
         <div className="cargador" data-label="Cargadores">
           <img src={imgCargador} className="imagenHover" />
         </div>
-        <div className="fundas" data-label="Fundas y protectores para celular">
+        <div className="fundas" data-label="Fundas y protectores">
           <img src={imgFundas} className="imagenHover" />
         </div>
         <div className="cables" data-label="Cables USB y auxiliares">
