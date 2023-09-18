@@ -24,7 +24,7 @@ const Servicios = () => {
           </div>
           <div className="container-info">
             <img src={imgPc} />
-            <p>Soporte técnico (harware)</p>
+            <p>Soporte técnico (hardware)</p>
           </div>
           <div className="container-info">
             <img src={imgCelular} />
