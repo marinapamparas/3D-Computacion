@@ -29,7 +29,7 @@ const NavBar = () => {
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggle-container' onClick={toggleNavbar}>
         
-        <a className='buttonnavbar'>{expanded ? <FaTimes className='cruznavbar'/> : <FaBars />}</a>
+        <a className='buttonnavbar'>{menuOpen ? <FaTimes className='cruznavbar'/> : <FaBars />}</a>
           
         </Navbar.Toggle>
         
