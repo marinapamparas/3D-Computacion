@@ -357,7 +357,7 @@
         flex-direction: column;
         justify-content: center;
         grid-area: direccion;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
 
     .info-direccion {
@@ -379,7 +379,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 0%;
         grid-area: horarios;
     }
 
@@ -594,7 +594,7 @@
         flex-direction: column;
         justify-content: center;
         grid-area: direccion;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
 
     .info-direccion {
@@ -616,7 +616,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 0%;
         grid-area: horarios;
     }
 
