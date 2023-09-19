@@ -123,7 +123,7 @@
     }
     .navbarcollapse{
         position: fixed;        
-        top: 12%;                 
+        top: 10%;                 
         bottom: 0;             
         left: 50%;              
         width: 50%;             
@@ -151,6 +151,6 @@
         padding: 15% 10% 12% 6%;
     }
      .navbarcollapse{
-        top: 8%; 
+        top: 7%; 
     }
 }
