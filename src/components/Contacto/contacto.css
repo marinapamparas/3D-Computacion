@@ -37,19 +37,23 @@
 
 
 .titles h1 {
-    color: #DCE2E5;
+    color: #FFF;
     font-size: 1rem;
 }
 
 .title-contacto {
     text-align: center;
     margin-top: 5%;
-    color: #DCE2E5;
+    color: #FFF;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.44px;
+}
+
+.title-contacto h3 {
+    font-size: 40px;
 }
 
 .line-side {
@@ -97,7 +101,7 @@
     width: 66%;
     height: 100%;
     margin-bottom: 5%;
-    color: #DCE2E5;
+    color: #FFF;
     gap: 0%;
     display: grid;
     grid-template-columns: 1fr min-content 1.1fr min-content 1fr;
@@ -146,9 +150,10 @@
     justify-content: center;
 }
 
-.container-icono-tel p {
+.container-icono-tel a {
     text-align: left;
-    margin-left: 5%;
+    font-size: 15px;
+    margin-left: 6%;
 }
 
 .container-icono-ubi {
@@ -220,12 +225,11 @@
 }
 
 
-
 .horarios-mobile {
     display: none;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
 
     .container-contacto {
         display: flex;
@@ -268,14 +272,14 @@
     }
 
     .titles h1 {
-        color: #DCE2E5;
+        color: #FFF;
         font-size: 1rem;
     }
 
     .title-contacto {
         text-align: center;
         margin-top: 5%;
-        color: #DCE2E5;
+        color: #FFF;
         font-style: normal;
         font-weight: 600;
     }
@@ -505,14 +509,14 @@
     }
 
     .titles h1 {
-        color: #DCE2E5;
+        color: #FFF;
         font-size: 1rem;
     }
 
     .title-contacto {
         text-align: center;
         margin-top: 5%;
-        color: #DCE2E5;
+        color: #FFF;
         font-style: normal;
         font-weight: 600;
     }
@@ -545,7 +549,7 @@
         width: 100%;
         height: 100%;
         margin-bottom: 5%;
-        color: #DCE2E5;
+        color: #FFF;
         gap: 0%;
     }
 
@@ -663,6 +667,11 @@
     .container-icono-tel img {
         width: 20px;
         margin-bottom: 5%;
+    }
+
+    .container-icono-tel a {
+        font-size: 13px;
+
     }
 
     .container-icono-ubi img {

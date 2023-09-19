@@ -262,6 +262,7 @@
 .mobile-title {
     display: none;
 }
+
 @media only screen and (max-width: 750px) {
     .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
         font-size: 17px;
@@ -428,7 +429,7 @@
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 1; 
+        opacity: 1;
         color: white;
         pointer-events: none;
         transition: opacity 0.3s ease;
