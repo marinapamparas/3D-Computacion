@@ -15,6 +15,7 @@ const Productos = () => {
           <p>
             <span className="desktop-title">Productos </span> Conseguilos en
             nuestra tienda. Consultanos; tenemos variedad de
+            <span className="desktop-title">Productos </span> Consultanos, tenemos variedad de
             opciones.
           </p>
         </div>

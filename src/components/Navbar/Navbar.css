@@ -1,29 +1,31 @@
 .logoimg{  
     height: 100%;
 }
-.navbar{
-    transition: none;
-}
 
 .navbar-fixed {
     position: fixed !important;
     z-index: 1000;
     background-color: white;
-  }
+}
 
 .logocontainer{
     width: 20%;
 }
+
 .navbarcontainer{
     height: 130px;
 }
 
-
-
 .navbarlinks{
     display: flex;
-
+    justify-content: space-between;
+    margin-left: 10%;
 }
+
+.retoque{
+    padding-left: 4%;
+}
+
 .titulosnavbar{
     color: #313E47; 
     text-decoration: none;
@@ -32,8 +34,14 @@
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    letter-spacing: -0.264px;  
-    padding-left: 8%; 
+    letter-spacing: -0.264px; 
+}
+
+.titulosnavbar:hover{
+    color:#7BCAD1;
+}
+.titulosnavbar:active{
+    color:#7BCAD1;
 }
 
 .nav-border-bottom{
@@ -55,6 +63,41 @@
 }
 
 
+@media (max-width: 1400px){
+    .navbarcontainer{
+        padding: 0 !important;
+        margin: 0% 3% 0% 9% !important;
+    }
+    .logocontainer{
+        width: 25%;
+    }
+    .retoque{
+        padding-left: 5%;
+    }
+    .navbarlinks{
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 1280px){
+    .navbarcontainer{
+        margin: 0% 4% 0% 5% !important;
+    }
+ 
+}
+
+@media (max-width: 1200px){
+    .navbarcontainer{
+        margin: 0% 4% 0% 6% !important;
+    }
+    .retoque{
+        padding-left: 7%;
+    }
+    .navbarlinks{
+        margin-left: 10%;
+    }
+    
+}
 
 
 @media (max-width: 999px){
@@ -80,7 +123,7 @@
     }
     .navbarcollapse{
         position: fixed;        
-        top: 12%;                 
+        top: 10%;                 
         bottom: 0;             
         left: 50%;              
         width: 50%;             
@@ -100,14 +143,14 @@
         font-size: 28px !important;
     }
     .logocontainer{
-        width: 40%;
-        margin: 0% 4% 0%;
+        width: 35%;
+        margin: 0% 6% 0%;
     }
     .titulosnavbar{
         font-size: 18px;
         padding: 15% 10% 12% 6%;
     }
      .navbarcollapse{
-        top: 8%; 
+        top: 7%; 
     }
 }
