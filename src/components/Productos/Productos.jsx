@@ -13,8 +13,7 @@ const Productos = () => {
         <div className="info-productos">
           <h3 className="mobile-title">Productos</h3>
           <p>
-            <span className="desktop-title">Productos </span> Conseguilos en
-            nuestra tienda o por Marketplace. Consultanos; tenemos variedad de
+            <span className="desktop-title">Productos </span> Consultanos, tenemos variedad de
             opciones.
           </p>
         </div>

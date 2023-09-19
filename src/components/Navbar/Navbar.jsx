@@ -11,9 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavBar = () => {
 
   const [expanded, setExpanded] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleNavbar = () => {
     setExpanded(!expanded);
+    setMenuOpen(!menuOpen);
   };
   
   return (
@@ -25,23 +27,20 @@ const NavBar = () => {
         </div>   
         
 
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          className='toggle-container'
-          onClick={toggleNavbar}
-        >
-          <button className='buttonnavbar'>{expanded ? <FaTimes className='cruznavbar'/> : <FaBars />}</button>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggle-container' onClick={toggleNavbar}>
+        
+        <a className='buttonnavbar'>{expanded ? <FaTimes className='cruznavbar'/> : <FaBars />}</a>
           
         </Navbar.Toggle>
         
         
-        <Navbar.Collapse id="basic-navbar-nav" >
+        <Navbar.Collapse id="basic-navbar-nav" style={{ display: menuOpen ? 'block' : 'none' }}>
             <div className='navbarcollapse'>
               <Nav className="me-auto navbarlinks">
-                <Link className="titulosnavbar" to={`#QuienesSomos`}>Quiénes somos</Link>
-                <Link className="titulosnavbar" to={`#Servicios`}>Servicios</Link>
-                <Link className="titulosnavbar" to={`#Productos`}>Productos</Link>
-                <Link  className="titulosnavbar" to={`#Contacto`}>Contactanos</Link>
+                <Link className="titulosnavbar" to={`#QuienesSomos`} onClick={() => setMenuOpen(false)}>Quiénes somos</Link>
+                <Link className="titulosnavbar retoque" to={`#Servicios`} onClick={() => setMenuOpen(false)}>Servicios</Link>
+                <Link className="titulosnavbar" to={`#Productos`} onClick={() => setMenuOpen(false)}>Productos</Link>
+                <Link  className="titulosnavbar" to={`#Contacto`} onClick={() => setMenuOpen(false)}>Contactanos</Link>
                               
               </Nav>
             </div>
