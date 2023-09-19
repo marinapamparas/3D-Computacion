@@ -5,6 +5,7 @@ import iconUbicacion from "../../multimedia/ubicacios.svg";
 import iconTelefono from "../../multimedia/telefono.svg";
 import iconHora from "../../multimedia/horarios.svg";
 import line from "../../multimedia/Rectangle.svg";
+import PhoneNumberLink from "../PhoneNumberLink/PhoneNumberLink";
 
 const Contacto = () => {
   return (
@@ -33,7 +34,7 @@ const Contacto = () => {
             <div className="telefono">
               <div className="container-icono-tel">
                 <img src={iconTelefono} />
-                <p>0261 334 - 1834</p>
+                <PhoneNumberLink/>
               </div>
             </div>
             <div className="barra"></div>

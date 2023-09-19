@@ -10,11 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
 
-  const [expanded, setExpanded] = useState(false); 
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setExpanded(!expanded);
     setMenuOpen(!menuOpen);
   };
   
