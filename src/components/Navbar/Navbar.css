@@ -106,7 +106,7 @@
         margin: 2%;
     }
     .navbarcontainer{
-        margin: 2% 10% 2%;
+        margin: 2% 0% 2%;
         height: 100%;
         
     }
@@ -144,7 +144,7 @@
     }
     .logocontainer{
         width: 35%;
-        margin: 0% 6% 0%;
+        margin: 0;
     }
     .titulosnavbar{
         font-size: 18px;
@@ -152,5 +152,10 @@
     }
      .navbarcollapse{
         top: 7%; 
+    }
+    .navbarcontainer{
+        margin: 0.5vw 3.5vw 0vw !important;
+        height: 100%;
+        
     }
 }
