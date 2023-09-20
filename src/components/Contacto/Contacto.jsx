@@ -25,16 +25,16 @@ const Contacto = () => {
             ></iframe>
           </div>
           <div className="titles">
-            <h1>Teléfono</h1>
-            <h1>Dirección</h1>
-            <h1 title="horarios-title">Horarios de Atención</h1>
+            <h1 className="title-tel">Teléfono</h1>
+            <h1 className="title-dir">Dirección</h1>
+            <h1 className="title-hor">Horarios de Atención</h1>
           </div>
           <div className="datos-contacto">
             <p className="title-1">Teléfono</p>
             <div className="telefono">
               <div className="container-icono-tel">
                 <img src={iconTelefono} />
-                <PhoneNumberLink/>
+                <PhoneNumberLink />
               </div>
             </div>
             <div className="barra"></div>
@@ -68,9 +68,8 @@ const Contacto = () => {
               <div className="container-icono-horario">
                 <img src={iconHora} />
                 <div className="info-horarios">
-                  <p>
-                    Lunes a Viernes: 9:00 hs a 13:00 hs, 17:30 hs a 20:30 hs
-                  </p>
+                  <p>Lunes a Viernes: 9:00 hs a 13:00 hs</p>
+                  <p>17:30 hs a 20:30 hs</p>
                   <p>Sábado: 9:00 a 13:30 hs</p>
                   <p>Domingo: Cerrado</p>
                 </div>
