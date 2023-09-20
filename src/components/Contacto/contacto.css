@@ -29,26 +29,31 @@
 .titles {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    margin-left: 17%;
+    justify-content: space-around;
+    width: 72%;
+    margin-left: 16%;
     margin-top: 5%;
 }
 
+
 .titles h1 {
-    color: #DCE2E5;
+    color: #FFF;
     font-size: 1rem;
 }
 
 .title-contacto {
     text-align: center;
     margin-top: 5%;
-    color: #DCE2E5;
+    color: #FFF;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.44px;
+}
+
+.title-contacto h3 {
+    font-size: 40px;
 }
 
 .line-side {
@@ -93,10 +98,10 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: 66%;
     height: 100%;
     margin-bottom: 5%;
-    color: #DCE2E5;
+    color: #FFF;
     gap: 0%;
     display: grid;
     grid-template-columns: 1fr min-content 1.1fr min-content 1fr;
@@ -115,19 +120,18 @@
 }
 
 .telefono p {
-    margin-bottom: 8%;
+    margin-bottom: 3%;
 }
 
 .direccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-right: 2%; */
     grid-area: direccion;
 }
 
 .info-direccion {
-    margin-left: 6%;
+    margin-left: 8%;
 }
 
 .horarios {
@@ -135,7 +139,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 5%;
+    margin-left: 10%;
     grid-area: horarios;
 }
 
@@ -144,7 +148,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 80%; */
+}
+
+.container-icono-tel a {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 6%;
 }
 
 .container-icono-ubi {
@@ -169,8 +178,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 10%;
-    /* width: 100%; */
-
 }
 
 .info-horarios {
@@ -179,7 +186,7 @@
     align-items: center;
     justify-content: left;
     text-align: start;
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 .container-icono-tel img {
@@ -192,6 +199,7 @@
 
 .container-icono-horario img {
     width: 20%;
+    margin-bottom: 5%;
 }
 
 .title-2 {
@@ -217,10 +225,245 @@
 }
 
 
-
-@media only screen and (max-width: 750px) {
-    
+.horarios-mobile {
+    display: none;
 }
+
+@media only screen and (max-width: 1050px) {
+
+    .container-contacto {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: url('../../multimedia/fondoServicios.png');
+        background-color: #01395E;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-info-contacto {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        gap: 8%;
+        padding: 5%;
+    }
+
+    .container-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titles {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: 17%;
+        margin-top: 5%;
+        display: none;
+    }
+
+    .titles h1 {
+        color: #FFF;
+        font-size: 1rem;
+    }
+
+    .title-contacto {
+        text-align: center;
+        margin-top: 5%;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .title-contacto h3 {
+        font-size: 40px;
+    }
+
+    .google-maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        width: 60%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .google-maps iframe {
+        border-radius: 20px;
+        height: 47vh;
+    }
+
+    .datos-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+        color: #DCE2E5;
+        gap: 0%;
+    }
+
+    .title-1 {
+        display: flex;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .title-2 {
+        display: flex;
+        font-weight: 600;
+        font-size: 1.2rem;
+
+    }
+
+    .title-3 {
+        display: flex;
+        font-weight: 600;
+        font-size: 1.2rem;
+
+    }
+
+    .telefono {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        grid-area: telefono;
+        margin-bottom: 3%;
+    }
+
+    .telefono p {
+        margin-bottom: 0%;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .direccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: direccion;
+        margin-bottom: 0%;
+    }
+
+    .info-direccion {
+        display: none;
+    }
+
+    .info-direccion-mobile {
+        margin-left: 3%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        text-align: start;
+    }
+
+
+    .horarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+        grid-area: horarios;
+    }
+
+
+    .container-icono-tel {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        width: 50%;
+    }
+
+    .container-icono-ubi {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+    .container-icono-ubi p {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        line-height: 150%;
+        font-size: 15px;
+        margin-top: 1%;
+    }
+
+    .container-icono-horario {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 0%;
+
+    }
+
+    .info-horarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        text-align: start;
+        margin-left: 3%;
+        font-size: 15px;
+    }
+
+    .container-icono-tel img {
+        width: 25px;
+        margin-bottom: 5%;
+    }
+
+    .container-icono-ubi img {
+        width: 25px;
+    }
+
+    .container-icono-horario img {
+        width: 25px;
+    }
+
+    .google-maps-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 5%;
+    }
+
+    .google-maps-mobile iframe {
+        border-radius: 20px;
+        height: 30vh;
+    }
+
+    .barra {
+        display: none;
+    }
+
+    .barra2 {
+        display: none;
+    }
+
+}
+
 
 
 @media only screen and (max-width: 550px) {
@@ -266,14 +509,14 @@
     }
 
     .titles h1 {
-        color: #DCE2E5;
+        color: #FFF;
         font-size: 1rem;
     }
 
     .title-contacto {
         text-align: center;
         margin-top: 5%;
-        color: #DCE2E5;
+        color: #FFF;
         font-style: normal;
         font-weight: 600;
     }
@@ -306,24 +549,27 @@
         width: 100%;
         height: 100%;
         margin-bottom: 5%;
-        color: #DCE2E5;
+        color: #FFF;
         gap: 0%;
     }
 
     .title-1 {
         display: flex;
         font-weight: 600;
-
+        font-size: 17px;
     }
 
     .title-2 {
         display: flex;
         font-weight: 600;
+        font-size: 17px;
+
     }
 
     .title-3 {
         display: flex;
         font-weight: 600;
+        font-size: 17px;
 
     }
 
@@ -348,7 +594,7 @@
         flex-direction: column;
         justify-content: center;
         grid-area: direccion;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
 
     .info-direccion {
@@ -370,7 +616,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 0%;
         grid-area: horarios;
     }
 
@@ -415,11 +661,17 @@
         text-align: start;
         margin-left: 3%;
         font-size: 12px;
+        white-space: nowrap;
     }
 
     .container-icono-tel img {
         width: 20px;
         margin-bottom: 5%;
+    }
+
+    .container-icono-tel a {
+        font-size: 13px;
+
     }
 
     .container-icono-ubi img {
@@ -452,201 +704,5 @@
     .barra2 {
         display: none;
     }
+
 }
-
-
-/* @media only screen and (max-width: 450px) {
-
-    .container-info-contacto {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row-reverse;
-        gap: 10%;
-        padding: 5%;
-    }
-
-    .container-data {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .title-contacto {
-        text-align: center;
-        margin-top: 5%;
-        color: #DCE2E5;
-        font-style: normal;
-        font-weight: 600;
-    }
-
-    .title-contacto h3 {
-        font-size: 25px;
-    }
-
-    .google-maps {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1%;
-        width: 60%;
-        border-radius: 20px;
-        display: none;
-    }
-
-    .google-maps iframe {
-        border-radius: 20px;
-        height: 47vh;
-    }
-
-    .datos-contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 5%;
-        color: #DCE2E5;
-        gap: 0%;
-    }
-
-    .title-1 {
-        display: flex;
-        font-weight: 600;
-
-    }
-
-    .title-2 {
-        display: flex;
-        font-weight: 600;
-    }
-
-    .title-3 {
-        display: flex;
-        font-weight: 600;
-
-    }
-
-    .telefono {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        grid-area: telefono;
-        margin-bottom: 3%;
-    }
-
-    .telefono p {
-        margin-bottom: 0%;
-        font-size: 12px;
-        text-align: left;
-        margin-left: 5%;
-    }
-
-    .direccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        grid-area: direccion;
-        margin-bottom: 5%;
-    }
-
-    .info-direccion {
-        display: none;
-    }
-
-    .info-direccion-mobile{
-        margin-left: 3%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .horarios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5%;
-        grid-area: horarios;
-    }
-
-
-    .container-icono-tel {
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        width: 50%;
-    }
-
-    .container-icono-ubi {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 0%;
-        margin-left: 0%;
-    }
-
-    .container-icono-ubi p {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        line-height: 150%;
-        font-size: 12px;
-        margin-top: 1%;
-    }
-
-    .container-icono-horario {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        margin-top: 0%;
-
-    }
-
-    .info-horarios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: left;
-        text-align: start;
-        margin-left: 3%;
-        font-size: 12px;
-    }
-
-    .container-icono-tel img {
-        width: 20px;
-        margin-bottom: 5%;
-    }
-
-    .container-icono-ubi img {
-        width: 20px;
-    }
-
-    .container-icono-horario img {
-        width: 20px;
-    }
-
-    .google-maps-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1%;
-        width: 100%;
-        border-radius: 20px;
-        margin-bottom: 5%;
-    }
-
-    .google-maps-mobile iframe {
-        border-radius: 20px;
-        height: 30vh;
-    }
-} */

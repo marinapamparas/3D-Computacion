@@ -13,8 +13,8 @@ const Productos = () => {
         <div className="info-productos">
           <h3 className="mobile-title">Productos</h3>
           <p>
-            <span className="desktop-title">Productos </span> Consultanos, tenemos variedad de
-            opciones.
+            <span className="desktop-title">Productos </span> Conseguilos en
+            nuestra tienda. Consultanos; tenemos variedad de opciones.
           </p>
         </div>
         <div className="auris" data-label="Auriculares">
