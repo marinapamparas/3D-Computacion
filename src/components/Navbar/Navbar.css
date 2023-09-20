@@ -54,6 +54,7 @@
     border: white !important;
     color: white !important;
     font-size: 35px !important;
+    padding-right: 0% !important;
 }
 
 
@@ -167,7 +168,7 @@
         top: 7%;
     }
     .navbarcontainer{
-        margin: 0.5vw 3.5vw 0vw !important;
+        margin: 0.5vw 0vw 0vw 3.5vw!important;
         height: 100%;
         
     }
