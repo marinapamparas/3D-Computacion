@@ -5,8 +5,8 @@
     gap: 20px 30px;
     grid-template-areas:
         "info-productos info-productos info-productos info-productos"
-        "auris cargador fundas fundas"
-        "cables cables mouse mouse";
+        "cables cables mouse mouse"
+        "auris cargador fundas fundas";
     padding: 5%;
 }
 
@@ -162,6 +162,7 @@
     color: white;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    white-space: nowrap;
 }
 
 .cargador:hover::after {
@@ -276,10 +277,6 @@
         grid-template-columns: min 1fr 1fr 1fr;
         grid-template-rows: min-content 1fr;
         gap: 10px 10px;
-        grid-template-areas:
-            "info-productos info-productos info-productos info-productos"
-            "auris cargador fundas fundas"
-            "cables cables mouse mouse";
         padding: 5%;
     }
 

@@ -3,8 +3,8 @@ import "./productos.css";
 import imgAuriculares from "../../multimedia/auriculares.png";
 import imgCargador from "../../multimedia/cargador.png";
 import imgFundas from "../../multimedia/fundas.png";
-import imgCables from "../../multimedia/cables.png";
-import imgMouse from "../../multimedia/mouse.png";
+import imgComputadora from "../../multimedia/netbook.jpg";
+import imgTeclado from "../../multimedia/teclado-rosa.jpg";
 
 const Productos = () => {
   return (
@@ -14,23 +14,23 @@ const Productos = () => {
           <h3 className="mobile-title">Productos</h3>
           <p>
             <span className="desktop-title">Productos </span> Conseguilos en
-            nuestra tienda. Consultanos; tenemos variedad de opciones.
+            nuestro local. Consultanos, tenemos variedad de opciones.
           </p>
+        </div>
+        <div className="cables" data-label="Computadoras">
+          <img src={imgComputadora} className="imagenHover" />
+        </div>
+        <div className="mouse" data-label="Mouses y teclados">
+          <img src={imgTeclado} className="imagenHover" />
         </div>
         <div className="auris" data-label="Auriculares">
           <img src={imgAuriculares} className="imagenHover" />
         </div>
-        <div className="cargador" data-label="Cargadores">
+        <div className="cargador" data-label="Cables USB">
           <img src={imgCargador} className="imagenHover" />
         </div>
         <div className="fundas" data-label="Fundas y protectores">
           <img src={imgFundas} className="imagenHover" />
-        </div>
-        <div className="cables" data-label="Cables USB y auxiliares">
-          <img src={imgCables} className="imagenHover" />
-        </div>
-        <div className="mouse" data-label="Mouses y teclados">
-          <img src={imgMouse} className="imagenHover" />
         </div>
       </div>
     </div>
