@@ -110,7 +110,7 @@
     border-radius: 18px;
 }
 
-.auris:hover::before {
+.cables::before, .mouse::before, .fundas::before, .cargador::before, .auris::before {
     content: "";
     position: absolute;
     left: 0;
@@ -122,96 +122,7 @@
     border-radius: inherit;
 }
 
-.auris::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 24px;
-    color: white;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.auris:hover::after {
-    opacity: 1;
-}
-
-.cargador:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    pointer-events: none;
-    border-radius: inherit;
-}
-
-.cargador::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 24px;
-    color: white;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-}
-
-.cargador:hover::after {
-    opacity: 1;
-}
-
-.fundas:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    pointer-events: none;
-    border-radius: inherit;
-}
-
-.fundas::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 24px;
-    color: white;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-}
-
-.fundas:hover::after {
-    opacity: 1;
-}
-
-.cables:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    pointer-events: none;
-    border-radius: inherit;
-}
-
-.cables::after {
+.cables::after, .mouse::after, .fundas::after, .cargador::after, .auris::after {
     content: attr(data-label);
     position: absolute;
     top: 90%;
@@ -226,39 +137,10 @@
 
 }
 
-.cables:hover::after {
+.cables:hover::after,.mouse:hover::after,.fundas:hover::after, .cargador:hover::after, .auris:hover::after {
     opacity: 1;
 }
 
-.mouse:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    pointer-events: none;
-    border-radius: inherit;
-}
-
-.mouse::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 24px;
-    color: white;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-}
-
-.mouse:hover::after {
-    opacity: 1;
-}
 
 .mobile-title {
     display: none;
