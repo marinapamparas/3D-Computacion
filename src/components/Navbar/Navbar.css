@@ -140,7 +140,7 @@
         width: 50%;
         background-color: white;
         z-index: 1000;
-        overflow-y: auto;
+        /* overflow-y: auto; */
     }
 
 
