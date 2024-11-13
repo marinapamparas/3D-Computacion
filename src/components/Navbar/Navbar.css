@@ -1,0 +1,175 @@
+.logoimg {
+    height: 100%;
+}
+
+.navbar-fixed {
+    position: fixed !important;
+    z-index: 1000;
+    background-color: white;
+}
+
+.logocontainer {
+    width: 20%;
+}
+
+.navbarcontainer {
+    height: 130px;
+}
+
+.navbarlinks {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.retoque {
+    padding-left: 4%;
+}
+
+.titulosnavbar {
+    color: #313E47;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+}
+
+.titulosnavbar:hover {
+    color: #7BCAD1;
+}
+
+.titulosnavbar:active {
+    color: #7BCAD1;
+}
+
+.nav-border-bottom {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.242);
+}
+
+.toggle-container {
+    width: 15%;
+    border: white !important;
+    color: white !important;
+    font-size: 35px !important;
+    padding-right: 0% !important;
+}
+
+
+.buttonnavbar {
+    background-color: white;
+    border: 0px;
+    font-weight: 300;
+    color: #313E47;
+}
+
+
+@media (max-width: 1400px) {
+    .navbarcontainer {
+        padding: 0 !important;
+        margin: 0% 3% 0% 9% !important;
+    }
+
+    .logocontainer {
+        width: 25%;
+    }
+
+    .retoque {
+        padding-left: 5%;
+    }
+
+    .navbarlinks {
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbarcontainer {
+        margin: 0% 4% 0% 5% !important;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .navbarcontainer {
+        margin: 0% 4% 0% 6% !important;
+    }
+
+    .retoque {
+        padding-left: 7%;
+    }
+
+    .navbarlinks {
+        margin-left: 10%;
+    }
+
+}
+
+
+@media (max-width: 999px) {
+    .logocontainer {
+        width: 35%;
+        margin: 2%;
+    }
+    .navbarcontainer{
+        margin: 2% 0% 2%;
+        height: 100%;
+
+    }
+
+    .titulosnavbar {
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        padding: 15% 0% 15% 7%;
+        color: #313E47;
+        line-height: normal;
+        border: white solid;
+    }
+
+    .contactanoslink {
+        padding-bottom: 80%;
+    }
+
+    .navbarcollapse {
+        position: fixed;
+        top: 10%;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+        background-color: white;
+        z-index: 1000;
+        /* overflow-y: auto; */
+    }
+
+
+}
+
+@media (max-width: 501px) {
+    .toggle-container {
+        width: 20%;
+        border: white !important;
+        color: white !important;
+        font-size: 28px !important;
+    }
+
+    .logocontainer {
+        width: 35%;
+        margin: 0;
+    }
+
+    .titulosnavbar {
+        font-size: 18px;
+        padding: 15% 10% 12% 6%;
+    }
+
+    .navbarcollapse {
+        top: 7%;
+    }
+    .navbarcontainer{
+        margin: 0.5vw 0vw 0vw 3.5vw!important;
+        height: 100%;
+        
+    }
+}

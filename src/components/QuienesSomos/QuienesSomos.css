@@ -1,0 +1,105 @@
+.containerQuienesSomos{
+    display: flex;
+    background-color: #313e470c;
+    padding: 0;
+    margin-top:  145px;
+
+}
+
+.row{
+    margin: 0;
+}
+
+.fontp{
+    color: #313E47;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+}
+
+.fonth2{
+    color: #313E47;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.44px;
+    padding-bottom: 2%;
+}
+
+.containerp{
+    width: 75%;
+    height: 100%;
+    float: left;
+    
+    padding:5% 2% 7% 7%;
+}
+
+.containertecnico{
+    padding: 2% 0% 0%;
+    margin: 0;
+    width: 60%;
+    border-radius: 300px;
+    float: right;
+}
+
+.imgtecnico {
+    height: 100%;
+}
+
+.imgtecnicoresponsive{
+    display: none;
+    border-radius: 300px;
+    
+}
+
+@media (max-width: 570px){
+  .containerQuienesSomos{
+      margin-top:  12% ;
+  }
+  .containertecnico {
+      width: 100%;
+      padding: 10% 2% 6%;
+  }
+  .fonth2{
+      text-align: center;
+      font-size: 1.5rem !important;
+  }
+  .fontp{
+      font-size: 1rem!important;
+  }
+}
+
+@media (max-width: 999px) {
+    .imgtecnico {
+      display: none; 
+    }
+  
+    .imgtecnicoresponsive {
+      display: block; 
+    }
+    .containertecnico {
+        width: 100%;
+        padding: 6% 4%;
+    }
+    .containerp{
+        width: 100%;
+        padding: 0% 5% 2%;
+    }
+    .fonth2{
+        text-align: center;
+    }
+    .fontp{
+        text-align: justify;
+    }
+    .containerQuienesSomos{
+        margin-top:  12%;
+    }
+  }
+
+
+  

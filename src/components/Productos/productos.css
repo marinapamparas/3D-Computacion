@@ -1,0 +1,412 @@
+.container-productos {
+    display: grid;
+    grid-template-columns: min 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 20px 30px;
+    grid-template-areas:
+        "info-productos info-productos info-productos info-productos"
+        "cables cables mouse mouse"
+        "auris cargador fundas fundas";
+    padding: 5%;
+}
+
+.info-productos {
+    grid-area: info-productos;
+    display: flex;
+}
+
+.info-productos span {
+    color: #313E47;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-right: 15px;
+}
+
+.info-productos p {
+    color: #313E47;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+}
+
+.auris {
+    grid-area: auris;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.auris img {
+    width: 100%;
+    height: 100%;
+}
+
+.cargador {
+    grid-area: cargador;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: relative;
+
+}
+
+.cargador img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.fundas {
+    grid-area: fundas;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: relative;
+
+}
+
+.fundas img {
+    width: 100%;
+    height: 100%;
+}
+
+.cables {
+    grid-area: cables;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: relative;
+
+}
+
+.cables img {
+    width: 100%;
+    height: 100%;
+}
+
+.mouse {
+    grid-area: mouse;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    position: relative;
+
+}
+
+.mouse img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagenHover {
+    border-radius: 18px;
+}
+
+.cables::before, .mouse::before, .fundas::before, .cargador::before, .auris::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.cables::after, .mouse::after, .fundas::after, .cargador::after, .auris::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+
+}
+
+.cables:hover::after,.mouse:hover::after,.fundas:hover::after, .cargador:hover::after, .auris:hover::after {
+    opacity: 1;
+}
+
+
+.mobile-title {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .container-productos {
+        display: grid;
+        grid-template-columns: min 1fr 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        gap: 10px 10px;
+        padding: 5%;
+    }
+
+    .info-productos {
+        grid-area: info-productos;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-productos span {
+        color: #313E47;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.44px;
+        margin-right: 15px;
+    }
+
+    .info-productos p {
+        color: #313E47;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.264px;
+    }
+
+    .auris {
+        grid-area: auris;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .auris img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cargador {
+        grid-area: cargador;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .cargador img {
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+    }
+
+    .fundas {
+        grid-area: fundas;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .fundas img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cables {
+        grid-area: cables;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .cables img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mouse {
+        grid-area: mouse;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        position: relative;
+
+    }
+
+    .mouse img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagenHover {
+        border-radius: 18px;
+    }
+
+    .auris::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .auris::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .cargador::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .cargador::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+
+    .fundas::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .fundas::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        opacity: 1;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .cables::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .cables::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        opacity: 1;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+
+    }
+
+    .mouse::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .mouse::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        opacity: 1;
+        color: white;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+    }
+
+
+    .mobile-title {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .auris::after, .cargador::after, .fundas::after, .cables::after, .mouse::after {
+        font-size: 11px;
+    }
+}
